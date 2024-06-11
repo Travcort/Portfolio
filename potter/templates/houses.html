@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tarv | Harry Potter | Houses</title>
+        {% load static %}
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="{% static 'images/houses-favicon.ico' %}">
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="{% static 'css/otherPotter.css' %}">
+    </head>
+    <body>
+        <div class="main">
+            <div class="query-box">
+                <form method="POST">
+                    {% csrf_token %}
+                    <fieldset>
+                        <legend>Search Your Favourite House</legend>
+                        <input type="text" name="searchHouse">
+                        <button type="submit">Search</button>
+                        <button type="button" id="refresh">Random</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="response-box">
+                <div class="text-box">
+                    <div>
+                        <label for="name">HOUSE</label>
+                        <input id="name" type="text" value="{{houseName}}" readonly>
+                    </div>
+                    <div>
+                        <label for="founder">FOUNDER</label>
+                        <input id="founder" type="text" value="{{houseFounder}}" readonly>
+                    </div>
+                    <div>
+                        <label for="colours">COLOURS</label>
+                        {% for colour in houseColours %}
+                            <input id="colours" type="text" value="{{colour}}" readonly>
+                        {% endfor %}
+                    </div>
+                    <div>
+                        <label for="insignia">INSIGNIA</label>
+                        <input id="insignia" type="text" value="{{houseAnimal}}" readonly>
+                    </div>
+                    <div>
+                        <label for="emoji">EMOJI</label>
+                        <input id="emoji" type="text" value="{{houseEmoji}}" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="{% static 'js/potter.js' %}"></script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+# .gitignore file
+
+# Python
+*.pyc
+__pycache__/
+
+# Environment Variables
+.env
+
+# Virtual Environment
+venv/
+.venv/
+env/
+.env/
+
+# Django
+*.sqlite3
+
+# IDE
+.vscode/
+

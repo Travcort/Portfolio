@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tarv | Harry Potter</title>
+    
+        {% load static %}
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="{% static 'images/potter-landing-favicon.ico' %}">
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="{% static 'css/potter.css' %}">
+        
+        <!-- google font link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main-box">
+            <a href={% url 'potter:characters' %} class="container">
+                <div class="image-container">
+                    <img src="/static/images/potter-characters.jpg" alt="characters">
+                </div>
+                <h3>CHARACTERS</h3>
+            </a>
+            <a href={% url 'potter:spells' %} class="container">
+                <div class="image-container">
+                    <img src="/static/images/potter-spells.jpg" alt="spells">
+                </div>
+                <h3>SPELLS</h3>
+            </a>
+            <a href={% url 'potter:houses' %} class="container">
+                <div class="image-container">
+                    <img src="/static/images/potter-house-seals.jpg" alt="houses"> 
+                </div>
+                <h3>HOUSES</h3>
+            </a>
+            <a href={% url 'potter:books' %} class="container">
+                <div class="image-container">
+                    <img src="/static/images/potter-books.jpg" alt="books">
+                </div>
+                <h3>BOOKS</h3>
+            </a>
+        </div>
+    </body>
+</html>

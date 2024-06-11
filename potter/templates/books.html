@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tarv | Harry Potter | Books</title>
+        {% load static %}
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="{% static 'images/books-favicon.ico' %}">
+        
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="{% static 'css/otherPotter.css' %}">
+    </head>
+    <body>
+        <div class="main">
+            <!--The Character Output Box-->
+            <div class="query-box">
+                <form method="POST">
+                    {% csrf_token %}
+                    <fieldset>
+                        <legend>Search your Favourite Book</legend>
+                        <input type="text" name="searchBook">
+                        <button type="submit">Search</button>
+                        <button type="button" id="refresh">Random</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="response-box">
+                <div class="text-box">
+                    <div class="details">
+                        <label for="number">BOOK NUMBER</label>
+                        <input id="number" type="text" value="{{number}}" readonly>
+                    </div>
+                    <div class="details">
+                        <label for="title">TITLE</label>
+                        <textarea id="text-area" type="text" rows="1" cols="60" readonly>{{title}}</textarea>
+                    </div>
+                    <div class="details">
+                        <label for="released">RELEASE DATE</label>
+                        <input id="released" type="text" value="{{released}}" readonly>
+                    </div>
+                    <div class="details">
+                        <label for="pages">PAGES</label>
+                        <input id="pages" type="text" value="{{pages}}" readonly>
+                    </div>
+                </div>
+                <div class="image-box">
+                    <figure>
+                        <img src={{cover}} alt="Cover of {{title}}">
+                    </figure>
+                </div>
+            </div>
+            <div class="extra-box">
+                <label for="text-area">DESCRIPTION</label>
+                <textarea id="text-area" rows="1" cols="75" readonly>{{description}}</textarea>
+            </div>
+        </div>
+
+        <script src="{% static 'js/potter.js' %}"></script>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tarv | Harry Potter | Characters</title>
+        {% load static %}
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="{% static 'images/characters-favicon.ico' %}"> 
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="{% static 'css/otherPotter.css' %}">
+    </head>
+    <body>
+        <div class="main">
+            <div class="query-box">
+                <form method="POST">
+                    {% csrf_token %}
+                    <fieldset>
+                        <legend>Search your Favourite Character</legend>
+                        <input type="text" name="searchCharacter">
+                        <button type="submit">Search</button>
+                        <button type="button" id="refresh">Random</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="response-box">
+                <!--The Character Output Box-->
+                <div class="text-box">
+                    <div>
+                        <label for="name">FULL NAME</label>
+                        <input type="text"  id="name" value="{{randomName}}" readonly>
+                    </div>
+                    <div>
+                        <label for="nickName">NICK NAME</label>
+                        <input type="text" id="nickName" value="{{nick}}" readonly>
+                    </div>
+                    <div>
+                        <label for="birthday">BORN ON</label>
+                        <input type="text"  id="birthday" value="{{born}}" readonly>
+                    </div>
+                    <div>
+                        <label for="house">HOUSE</label>
+                        <input type="text" id="house" value="{{house}}" readonly>
+                    </div>
+                    <div>
+                        <label for="children">CHILDREN</label>
+                        {% for child in children %}
+                            <input type="text" id="children" value="{{child}}" readonly>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="image-box">
+                    <figure>
+                        <img src="{{ pic }}" alt="An image of {{randomName}}" loading="lazy">
+                        <figcaption>{{randomName}}</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <script src="{% static 'js/potter.js' %}"></script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tarv | Harry Potter | Spells</title>
+        {% load static %}
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="{% static 'images/spells-favicon.ico' %}">
+        
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="{% static 'css/otherPotter.css' %}">
+    </head>
+    <body>
+        <div class="main">
+            <div class="query-box">
+                <form method="POST">
+                    {% csrf_token %}
+                    <fieldset>
+                        <legend>Search Your Magical Spell</legend>
+                        <input type="text" name="searchSpell">
+                        <button type="submit">Search</button>
+                        <button type="button" id="refresh">Random</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="response-box">
+                <!-- The Spells Output Box -->
+                <div class="text-box">
+                    <div>
+                        <label for="spell">SPELL</label>
+                        <input id="spell" type="text" value="{{spellName}}" readonly>
+                    </div>
+                    <div>
+                        <label for="text-area">USE</label>
+                        <textarea id="text-area" type="text" rows="1" cols="75" readonly>{{spellUse}}</textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="{% static 'js/potter.js' %}"></script>
+    </body>
+</html>
