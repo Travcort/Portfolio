@@ -1,9 +1,9 @@
 #!/bin/bash
 # Creating a virtual environment
-#python3.9 -m venv virtual
+python3.9 -m venv virtual
 
 # Activating the virtual environment
-#.\virtual\Scripts\activate
+.\virtual\Scripts\activate
 
 # Installing the requirements
 pip install -r requirements.txt
