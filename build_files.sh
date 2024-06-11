@@ -1,11 +1,11 @@
 # Creating a virtual environment
-python3.9 -m venv virtual
+#python3.9 -m venv virtual
 
 # Activating the virtual environment
-.\virtual\Scripts\activate
+#.\virtual\Scripts\activate
 
 # Installing the requirements
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 
 # Collecting the static files
 python3.9 manage.py collectstatic
