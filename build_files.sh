@@ -1,8 +1,8 @@
 # Activating the virtual environment
-.\virtual\Scripts\activate
+#.\virtual\Scripts\activate
 
 # Installing the requirements
 pip install -r requirements.txt
 
 # Collecting the static files
-python3.11.8 manage.py collectstatic
+python3.9 manage.py collectstatic
