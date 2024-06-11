@@ -1,5 +1,5 @@
 # Creating a virtual environment
-python 3.9 -m venv virtual
+python3.9 -m venv virtual
 
 # Activating the virtual environment
 .\virtual\Scripts\activate
