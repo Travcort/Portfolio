@@ -5,4 +5,4 @@
 pip install -r requirements.txt
 
 # Collecting the static files
-python3.12 manage.py collectstatic
+python3.11.8 manage.py collectstatic
