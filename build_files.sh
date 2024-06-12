@@ -1,6 +1,6 @@
 #!/bin/bash
 # Creating a virtual environment
-python3.9 -m venv virtual
+python -m venv virtual
 
 # Activating the virtual environment
 .\virtual\Scripts\activate
