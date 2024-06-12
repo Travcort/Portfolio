@@ -9,4 +9,4 @@ python -m venv virtual
 python -m pip install -r requirements.txt
 
 # Collecting the static files
-python3.9 manage.py collectstatic
+python3.9 manage.py collectstatic --noinput
