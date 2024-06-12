@@ -6,7 +6,7 @@ python3.9 -m venv virtual
 .\virtual\Scripts\activate
 
 # Installing the requirements
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 
 # Collecting the static files
 python3.9 manage.py collectstatic
