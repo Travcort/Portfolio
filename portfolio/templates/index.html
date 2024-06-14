@@ -17,13 +17,13 @@ Hit RUN to see this project in action!
   <!-- Favicon -->
   <link rel="shortcut icon" href="{% static 'images/logo.ico' %}" type="image/x-icon">
 
-  <!-- StyleHeet -->
-  <link rel="styleHeet" href="{% static 'css/style.css' %}">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
   <!-- google font link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="styleHeet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -43,7 +43,7 @@ Hit RUN to see this project in action!
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./static/images/my-avatar.png" alt="Tarvone hanrick" width="80">
+          <img src="{% static 'images/my-avatar.png' %}" alt="Tarvone hanrick" width="80">
         </figure>
 
         <div class="info-content">
@@ -238,8 +238,7 @@ Hit RUN to see this project in action!
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./static/images/icon-design.svg
-                " alt="design icon" width="40">
+                <img src="{% static 'images/icon-design.svg' %}" alt="design icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -255,7 +254,7 @@ Hit RUN to see this project in action!
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./static/images/icon-dev.svg" alt="Web development icon" width="40">
+                <img src="{% static 'images/icon-dev.svg' %}" alt="Web development icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -271,7 +270,7 @@ Hit RUN to see this project in action!
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./static/images/icon-app.svg" alt="mobile app icon" width="40">
+                <img src="{% static 'images/icon-app.svg' %}" alt="mobile app icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -287,7 +286,7 @@ Hit RUN to see this project in action!
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./static/images/dice-solid.svg" alt="camera icon" width="40">
+                <img src="{% static 'images/dice-solid.svg' %}" alt="camera icon" width="40">
               </div>
 
               <div class="service-content-box">
@@ -319,7 +318,7 @@ Hit RUN to see this project in action!
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./static/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                  <img src="{% static 'images/avatar-1.png' %}" alt="Daniel lewis" width="60" data-testimonials-avatar>
                 </figure>
 
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
@@ -341,7 +340,7 @@ Hit RUN to see this project in action!
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./static/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                  <img src="{% static 'images/avatar-2.png' %}" alt="Jessica miller" width="60" data-testimonials-avatar>
                 </figure>
 
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
@@ -363,7 +362,7 @@ Hit RUN to see this project in action!
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./static/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                  <img src="{% static 'images/avatar-3.png' %}" alt="Emily evans" width="60" data-testimonials-avatar>
                 </figure>
 
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
@@ -385,7 +384,7 @@ Hit RUN to see this project in action!
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./static/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                  <img src="{% static 'images/avatar-4.png' %}" alt="Henry william" width="60" data-testimonials-avatar>
                 </figure>
 
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
@@ -424,10 +423,10 @@ Hit RUN to see this project in action!
 
             <div class="modal-img-wrapper">
               <figure class="modal-avatar-box">
-                <img src="./static/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                <img src="{% static 'images/avatar-1.png' %}" alt="Daniel lewis" width="80" data-modal-img>
               </figure>
 
-              <img src="./static/images/icon-quote.svg" alt="quote icon">
+              <img src="{% static 'images/icon-quote.svg' %}" alt="quote icon">
             </div>
 
             <div class="modal-content">
@@ -466,37 +465,37 @@ Hit RUN to see this project in action!
 
             <li class="clients-item">
               <a href="#">
-                <img src="./static/images/logo-1-color.png" alt="client logo">
+                <img src="{% static 'images/logo-1-color.png' %}" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./static/images/logo-2-color.png" alt="client logo">
+                <img src="{% static 'images/logo-2-color.png' %}" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./static/images/logo-3-color.png" alt="client logo">
+                <img src="{% static 'images/logo-3-color.png' %}" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./static/images/logo-4-color.png" alt="client logo">
+                <img src="{% static 'images/logo-4-color.png' %}" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./static/images/logo-5-color.png" alt="client logo">
+                <img src="{% static 'images/logo-5-color.png' %}" alt="client logo">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./static/images/logo-6-color.png" alt="client logo">
+                <img src="{% static 'images/logo-6-color.png' %}" alt="client logo">
               </a>
             </li>
 
@@ -625,7 +624,7 @@ Hit RUN to see this project in action!
               <p class="timeline-text">
                 Kenya National Library Services<br>
                 Skills Acquired:<br>
-                Microsoft Word | Excel | PowerPoint | Access | PubliHer
+                Microsoft Word | Excel | PowerPoint | Access | Publisher
               </p>
 
             </li>
@@ -791,7 +790,7 @@ Hit RUN to see this project in action!
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./static/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="{% static 'images/harry-potter-display.jpg' %}" alt="Hogwarts Express" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Harry Potter</h3>
@@ -809,7 +808,7 @@ Hit RUN to see this project in action!
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./static/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="{% static 'images/rick-morty-display.jpg' %}" alt="Rick and Morty" title="Coming Soon" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Rick and Morty</h3>
@@ -827,7 +826,7 @@ Hit RUN to see this project in action!
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./static/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="{% static 'images/project-3.jpg' %}" alt="fundo" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Fundo</h3>
@@ -845,7 +844,7 @@ Hit RUN to see this project in action!
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./static/images/project-4.png" alt="brawlhalla" loading="lazy">
+                  <img src="{% static 'images/project-4.png' %}" alt="brawlhalla" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Brawlhalla</h3>
@@ -863,7 +862,7 @@ Hit RUN to see this project in action!
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./static/images/project-5.png" alt="dsm." loading="lazy">
+                  <img src="{% static 'images/project-5.png' %}" alt="dsm." loading="lazy">
                 </figure>
 
                 <h3 class="project-title">DSM.</h3>
@@ -881,7 +880,7 @@ Hit RUN to see this project in action!
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./static/images/project-6.png" alt="metaspark" loading="lazy">
+                  <img src="{% static 'images/project-6.png' %}" alt="metaspark" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">MetaSpark</h3>
@@ -899,7 +898,7 @@ Hit RUN to see this project in action!
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./static/images/project-7.png" alt="summary" loading="lazy">
+                  <img src="{% static 'images/project-7.png' %}" alt="summary" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Summary</h3>
@@ -917,7 +916,7 @@ Hit RUN to see this project in action!
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./static/images/project-8.jpg" alt="task manager" loading="lazy">
+                  <img src="{% static 'images/project-8.jpg' %}" alt="task manager" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Task Manager</h3>
@@ -935,7 +934,7 @@ Hit RUN to see this project in action!
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./static/images/project-9.png" alt="arrival" loading="lazy">
+                  <img src="{% static 'images/project-9.png' %}" alt="arrival" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Arrival</h3>
@@ -973,7 +972,7 @@ Hit RUN to see this project in action!
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./static/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                  <img src="{% static 'images/blog-1.jpg' %}" alt="Design conferences in 2022" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1001,7 +1000,7 @@ Hit RUN to see this project in action!
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./static/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                  <img src="{% static 'images/blog-2.jpg' %}" alt="Best fonts every designer" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1029,7 +1028,7 @@ Hit RUN to see this project in action!
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./static/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                  <img src="{% static 'images/blog-3.jpg' %}" alt="Design digest #80" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1057,7 +1056,7 @@ Hit RUN to see this project in action!
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./static/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                  <img src="{% static 'images/blog-4.jpg' %}" alt="UI interactions of the week" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1085,7 +1084,7 @@ Hit RUN to see this project in action!
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./static/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                  <img src="{% static 'images/blog-5.jpg' %}" alt="The forgotten art of spacing" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1113,7 +1112,7 @@ Hit RUN to see this project in action!
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./static/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                  <img src="{% static 'images/blog-6.jpg' %}" alt="Design digest #79" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1160,8 +1159,8 @@ Hit RUN to see this project in action!
         <section class="mapbox" data-mapbox>
           <figure>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27060.7070532177!2d37.62930593066242!3d0.05722485060862463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x178821fe56b5066b%3A0xcb1b7dfcec59a73d!2sMeru!5e0!3m2!1sen!2ske!4v1718388975181!5m2!1sen!2ske"
+              width="400" height="300" title="Map of Meru County" loading="lazy"></iframe>
           </figure>
         </section>
 
@@ -1202,7 +1201,7 @@ Hit RUN to see this project in action!
   <!--
     - custom js link
   -->
-  <script src="./static/js/script.js"></script>
+  <script src="{% static 'js/script.js' %}"></script>
 
   <!--
     - ionicon link
