@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'portfolio',
-    'potter'
+    'potter',
+    'morty'
 ]
 
 MIDDLEWARE = [
@@ -61,7 +62,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'portfolio/templates', BASE_DIR / 'potter/templates'],
+        'DIRS': [BASE_DIR / 'portfolio/templates', BASE_DIR / 'potter/templates', BASE_DIR / 'morty/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

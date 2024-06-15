@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tarv | Rick & Morty</title>
+        {% load static %}
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="{% static 'images/' %}">
+        
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="{% static 'css/otherMorty.css' %}">
+    </head>
+    <body>
+        <div class="main">
+            <div class="query-box">
+                <form method="POST">
+                    {%  csrf_token  %}
+                    <fieldset>
+                        <legend>Search Your Favourite Location</legend>
+                        <input type="text" name="searchLocation" placeholder="Oops! Only numbers!">
+                        <button type="submit">Search</button>
+                        <button type="submit" id="refreshButton">Random</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="response-box">
+                <div class="text-box">
+                    <div>
+                        <label for="location">LOCATION</label>
+                        <input id="location" type="text" value="{{locationName}}" readonly>
+                    </div>
+                    <div>
+                        <label for="dimension">DIMENSION</label>
+                        <input id="dimension" type="text" value="{{dimension}}" readonly>
+                    </div>
+                    <div>
+                        <label for="type">TYPE</label>
+                        <input id="type" type="text" value="{{type}}" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
