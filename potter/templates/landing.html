@@ -19,6 +19,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div class="heading">
+            <h1 id="landing-header">Experience the Magic from Privet Drive to the Great Hall of Hogwarts!</h1>
+        </div>
         <div class="main-box">
             <a href={% url 'potter:characters' %} class="container">
                 <div class="image-container">
@@ -45,5 +48,7 @@
                 <h3>BOOKS</h3>
             </a>
         </div>
+
+        <script src={% static 'js/potter.js' %}></script>
     </body>
 </html>
