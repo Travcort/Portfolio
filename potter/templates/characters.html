@@ -53,12 +53,13 @@
                 </div>
                 <div class="image-box">
                     <figure>
-                        <img src="{{ pic }}" alt="An image of {{randomName}}" loading="lazy">
+                        <img src="{{ pic }}" alt="{{randomName}}" loading="lazy">
                         <figcaption>{{randomName}}</figcaption>
                     </figure>
                 </div>
             </div>
         </div>
-        <script src="{% static 'js/potter.js' %}"></script>
+
+        <script src={% static 'js/apis-script.js' %}></script>
     </body>
 </html>

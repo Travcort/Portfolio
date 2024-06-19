@@ -7,7 +7,7 @@
         <title>Tarv | Rick & Morty </title>
         {% load static %}
         <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="{% static 'images/' %}">
+        <link rel="icon" type="image/x-icon" href="{% static 'images/morty-characters-favicon.ico' %}">
         
         <!-- Stylesheet -->
         <link rel="stylesheet" href="{% static 'css/otherMorty.css' %}">
@@ -21,7 +21,7 @@
                         <legend>Search Your Favourite Character</legend>
                         <input type="text" name="searchCharacter" placeholder="Oops! Only numbers!">
                         <button type="submit">Search</button>
-                        <button type="submit" id="refreshButton">Random</button>
+                        <button type="button" id="refresh">Random</button>
                     </fieldset>
                 </form>
             </div>
@@ -55,6 +55,8 @@
                 </div>
             </div>
         </div>
+
+        <script src={% static 'js/apis-script.js' %}></script>
     </body>
 
 </html>
