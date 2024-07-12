@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", function() {
             let charIndex = 0;
             const headerText = header.textContent;
 
-            headerText.textContent = "";
+            header.textContent = "";
 
             function type() {
                 if (charIndex < headerText.length) {
-                    headerText.textContent += headerText.charAt(charIndex);
+                    header.textContent += headerText.charAt(charIndex);
                     charIndex ++;
                     setTimeout(type, 75);
                 }
