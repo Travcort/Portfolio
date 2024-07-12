@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <meta charset="utf-8">
+        <title>Post - Detailed</title>
+        {% load static %}
+            <!-- Stylesheet -->
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </header>
+    <body>
+        <div class="post">
+            <div id="title">
+                <h1>{{ post.title }}</h1>
+                <p>Posted By {{post.author}}</p>
+                <p>{{post.created_on}}</p>
+            </div>
+            <div id="content-div">
+                {{ post.content|safe }}
+            </div>
+        </div>
+    </body>
+</html>
