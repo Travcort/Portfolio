@@ -1,0 +1,38 @@
+:root {
+    --smoky-black: hsl(0, 0%, 7%);
+    --white-1: hsl(0, 0%, 100%);
+    --jet: hsl(0, 0%, 22%);
+    --onyx: hsl(240, 1%, 17%);
+    --rounding: 16px;
+}
+
+body { 
+    background: var(--smoky-black); 
+    color: var(--white-1);
+}
+
+#title {
+    text-align: center;
+    padding: 5px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: var(--jet);
+    outline: 2px solid yellow;
+    border-radius: var(--rounding);
+}
+
+#content-div {
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 50%;
+    margin: auto;
+    outline: 2px solid yellow;
+    background-color: var(--jet);
+    border-radius: var(--rounding);
+    height: 80vh;
+}
+
+#content {
+    padding-top: 10px;
+}
