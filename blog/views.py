@@ -1,6 +1,15 @@
-from django.shortcuts import render
+from django.conf import settings
+from django.http import JsonResponse
+from django.contrib.admin.views.decorators import staff_member_required
 from .models import Post
 from django.views import generic
+
+@staff_member_required
+def getTinyKey(request):
+    if request.method == 'GET':
+        return JsonResponse({'tiny_key': settings.TINY_KEY})
+    else:
+        return JsonResponse({'Error': 'Invalid Request Method'}, status=400)
 
 
 class BlogListView(generic.ListView):
