@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    <header>
+    <head>
         <meta charset="utf-8">
         <title>BLOG</title>
         {% load static %}
             <!-- Stylesheet -->
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    </header>
+    </head>
     <body>
         <main>
 
@@ -60,7 +60,7 @@
                       </div>
           
                       <div class="contact-info">
-                        <a href="{% url 'portfolio:home' %}#resume-page" class="contact-link">
+                        <a href="{% url 'portfolio:home' %}" class="contact-link">
                             <p class="contact-title">Resume</p>
                         </a>
                       </div>
@@ -126,7 +126,7 @@
                                 <a href="{% url 'blog:blog' Post.slug %}">
                 
                                 <figure class="blog-banner-box">
-                                    <img src="{% static 'images/blog-1.jpg' %}" alt="Testing" loading="lazy">
+                                    <img src="{% static 'images/Post_Profile.jpg' %}" alt="Testing" loading="lazy">
                                 </figure>
                 
                                 <div class="blog-content">
@@ -136,7 +136,7 @@
                 
                                     <span class="dot"></span>
                 
-                                    <time datetime="{{Post.created_on}}">{{Post.created_on}}</time>
+                                    <time datetime="{{Post.created_on}}">{{Post.created_on| date:"d-F-Y"}}</time>
                                     </div>
                 
                                     <h3 class="h3 blog-item-title">{{Post.title}}</h3>

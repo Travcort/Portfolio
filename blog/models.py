@@ -8,6 +8,7 @@ class Post(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
+    # When I become rich😭 image = models.ImageField(upload_to='post_images/', blank=True, null=True)
 
     class Meta:
         ordering = ["-created_on"]
