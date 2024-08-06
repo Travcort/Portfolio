@@ -5,7 +5,7 @@ import random
 BASE_URL = 'https://rickandmortyapi.com/api/'
 
 def home(request):
-  return render(request, 'morty-landing.html')
+  return render(request, 'morty/Landing.html')
 
 
 def characterMain(request):
@@ -58,7 +58,7 @@ def searchedCharacter(request):
     print("The server took too long to respond")
   else:
     print(f'Error: {characterQuery.status_code}')
-  return render(request, 'morty-characters.html', context)
+  return render(request, 'morty/Characters.html', context)
 
 
 def randomCharacter(request):
@@ -89,7 +89,7 @@ def randomCharacter(request):
     print("The server took too long to respond")
   else:
     print(f'Error: {randomCharQuery.status_code}')
-  return render(request, 'morty-characters.html', context)
+  return render(request, 'morty/Characters.html', context)
 
 
     #LOCATIONS ENDPOINT  
@@ -117,7 +117,7 @@ def searchedLocation(request):
     print("The server took too long to respond")
   else:
     print(f'Error: {locationQuery.status_code}')
-  return render(request, 'morty-locations.html', context)
+  return render(request, 'morty/Locations.html', context)
 
 
 def randomLocation(request):
@@ -144,4 +144,4 @@ def randomLocation(request):
   else:
     print(f'Error: {randLocQuery.status_code}')
 
-  return render(request, 'morty-locations.html', context)
+  return render(request, 'morty/Locations.html', context)

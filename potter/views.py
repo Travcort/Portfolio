@@ -6,7 +6,7 @@ from django.http import HttpRequest
 BASE_URL = 'https://potterapi-fedeperin.vercel.app/en/'
 
 def pot(request):
-    return render(request, 'landing.html')
+    return render(request, 'potter/Landing.html')
 
 
                             #THE SPELLS IMPLEMENTATION STARTS HERE
@@ -41,7 +41,7 @@ def randomSpell(request):
     else:
         print("Unhandled Spell Error")
     
-    return render(request, 'spells.html', context)
+    return render(request, 'potter/Spells.html', context)
 
             #SEARCHED SPELL
 def searchedSpell(request: HttpRequest):
@@ -66,7 +66,7 @@ def searchedSpell(request: HttpRequest):
     else:
         print("Unhandled Spell Error")
 
-    return render(request, 'spells.html', context)
+    return render(request, 'potter/Spells.html', context)
 
                             #THE SPELLS IMPLEMENTATION ENDS HERE
 
@@ -108,7 +108,7 @@ def randomCharacter(request):
     else:
         print("Unhandled Error")
     
-    return render(request, 'characters.html', context)
+    return render(request, 'potter/Characters.html', context)
 
 def searchedCharacter(request: HttpRequest):
              #CHARACTER
@@ -139,7 +139,7 @@ def searchedCharacter(request: HttpRequest):
     else:
         print("Unhandled Error")
     
-    return render(request, 'characters.html', context)
+    return render(request, 'potter/Characters.html', context)
 
                             #THE CHARACTERS IMPLEMENTATION ENDS HERE
                             
@@ -180,7 +180,7 @@ def randomHouse(request):
     else:
         # Handle cases where the response is not successful or empty
         print("Error: Could not retrieve valid data from the API")
-    return render(request, 'houses.html', context)
+    return render(request, 'potter/Houses.html', context)
 
 def searchedHouse(request):
             #HOUSE QUERY    
@@ -206,7 +206,7 @@ def searchedHouse(request):
         print("The Timeout Error on Searched House")
     else:
         print("Unhandled House Error")
-    return render(request, 'houses.html', context)
+    return render(request, 'potter/Houses.html', context)
                             
                             #THE HOUSES IMPLEMENTATION ENDS HERE
 
@@ -242,7 +242,7 @@ def randomBook(request):
         print("The Timeout Error on Searched Book")
     else:
         print("Unhandled House Error")
-    return render(request, 'books.html', context)
+    return render(request, 'potter/Books.html', context)
 
 def searchedBook(request):
     bookSearched = request.POST.get('searchBook')
@@ -266,5 +266,5 @@ def searchedBook(request):
         print("The Timeout Error on Searched Book")
     else:
         print("Unhandled House Error")
-    return render(request, 'books.html', context)
+    return render(request, 'potter/Books.html', context)
                             #THE BOOKS IMPLEMENTATION ENDS HERE
