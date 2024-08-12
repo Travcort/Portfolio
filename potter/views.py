@@ -5,7 +5,7 @@ from django.http import HttpRequest
 
 BASE_URL = 'https://potterapi-fedeperin.vercel.app/en/'
 
-def pot(request):
+def home(request):
     return render(request, 'potter/Landing.html')
 
 

@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'portfolio',
     'potter',
     'morty', 
-    'blog'
+    'blog',
+    'jokes'
 ]
 
 MIDDLEWARE = [

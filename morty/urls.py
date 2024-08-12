@@ -6,7 +6,7 @@ app_name = 'morty'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name="morty-landing"),
+    path('', views.home, name="home"),
     path('characters/', views.characterMain, name="characters"),
     path('locations/', views.locationMain, name="locations")
 ]

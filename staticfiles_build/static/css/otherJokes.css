@@ -1,0 +1,24 @@
+:root {
+    --smoky-black: hsl(0, 0%, 7%);
+    --white-1: hsl(0, 0%, 100%);
+    --transition-div: transform 0.8s ease;
+}
+
+
+body {
+    background-color: var(--smoky-black);
+    color: var(--white-1);
+    font-family: monospace;
+    text-align: center;
+    font-size: large;
+}
+
+a {
+    text-decoration-line: none;
+    color: var(--white-1);
+}
+
+.response {
+    place-content: center;
+    justify-content: center;
+}

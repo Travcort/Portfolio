@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // The Refresh Button
     if (document.getElementById("refresh")) {
-        var refreshButton = document.getElementById("refresh");
+        let refreshButton = document.getElementById("refresh");
         if(refreshButton) {
             refreshButton.addEventListener("click", function() {
                 console.log("Refreshed!");
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Resizing the textarea element in books.html and spells.html
     if (document.getElementById("text-area")) {
-        var textarea = document.getElementById('text-area');
+        let textarea = document.getElementById('text-area');
         textarea.style.height = "auto";
         textarea.style.height = (textarea.scrollHeight) + "px";
     }

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Pun</title>
+        {% load static %}
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="{% static 'images/jokes-favicon.png' %}" type="image/png">
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="{% static 'css/otherJokes.css' %}">
+    </head>
+    <body>
+        <h2 id="landing-header">{{ category }}</h2>
+        <button id="refresh">Random Joke</button>
+        <div class="response">
+            {% if joke %}
+                <p>Joke: {{ joke }}</p>  
+            {% else %}
+                <p><strong>Set-up:</strong> {{ setup }}</p>  
+                <p>Delivery: {{ delivery }}</p>  
+            {% endif %} 
+        </div> 
+
+        <script src="{% static 'js/apis-script.js' %}"></script>
+    </body>
+</html>    

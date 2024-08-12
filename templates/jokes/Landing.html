@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Tarv | Jokes</title>
+        {% load static %}
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="{% static 'images/jokes-favicon.png' %}" type="image/png">
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="{% static 'css/jokes.css' %}">
+    </head>
+    <body>
+        <div class="heading">
+            <div id="typewriter"></div>
+        </div>
+        <div class="main-box">
+            <a href={% url 'jokes:pun' %} class="container">
+                <div class="image-container">
+                    <img src="/static/images/jokes-pun.jpg" alt="characters">
+                </div>
+                <h3>PUNS</h3>
+            </a>
+            <a href={% url 'jokes:dark' %} class="container">
+                <div class="image-container">
+                    <img src="/static/images/jokes-dark.png" alt="spells">
+                </div>
+                <h3>DARK</h3>
+            </a>
+            <a href={% url 'jokes:programming' %} class="container">
+                <div class="image-container">
+                    <img src="/static/images/jokes-programming.png" alt="houses"> 
+                </div>
+                <h3>PROGRAMMING</h3>
+            </a>
+            <a href={% url 'jokes:spooky' %} class="container">
+                <div class="image-container">
+                    <img src="/static/images/jokes-spooky.jpg" alt="books">
+                </div>
+                <h3>SPOOKY</h3>
+            </a>
+            <a href={% url 'jokes:miscellaneous' %} class="container">
+                <div class="image-container">
+                    <img src="/static/images/jokes-miscellaneous.jpg" alt="books">
+                </div>
+                <h3>MISCELLANEOUS</h3>
+            </a>
+            <a href={% url 'jokes:mystery' %} class="container">
+                <div class="image-container">
+                    <img src="/static/images/jokes-mystery.jpg" alt="books">
+                </div>
+                <h3>MYSTERY</h3>
+            </a>
+        </div>
+
+        <script src="{% static 'js/joke-script.js' %}"></script>
+    </body>
+</html>    

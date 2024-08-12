@@ -22,7 +22,7 @@ app_name = 'potter'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.pot, name='potter-landing'),
+    path('', views.home, name='home'),
     path('spells/', views.spells, name='spells'),
     path('characters/', views.characters, name='characters'),
     path('houses/', views.houses, name='houses'),
