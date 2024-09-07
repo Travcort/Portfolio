@@ -34,7 +34,7 @@ a {
 
 @keyframes blink-caret {
     from { border-color: transparent; }
-    to { border-color: red; }
+    to { border-color: black; }
 }
 
 .main-box {
