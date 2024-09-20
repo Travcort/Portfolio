@@ -810,7 +810,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="{% static 'images/rick-morty-display.jpg' %}" alt="Rick and Morty" title="Coming Soon" loading="lazy">
+                  <img src="{% static 'images/rick-morty-display.jpg' %}" alt="Rick and Morty" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Rick and Morty</h3>
@@ -832,6 +832,24 @@
                 </figure>
 
                 <h3 class="project-title">Jokes</h3>
+
+                <p class="project-category">Humour</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="humour">
+              <a href="{% url 'facts:main' %}">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{% static 'images/facts-display.jpg' %}" alt="Facts" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Useless Facts</h3>
 
                 <p class="project-category">Humour</p>
 
