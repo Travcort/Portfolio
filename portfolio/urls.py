@@ -6,5 +6,6 @@ app_name = 'portfolio'
 
 urlpatterns = [
     path('admin/', admin.site.urls, name='mainAdmin'),
-    path('', views.home, name='home')
+    path('', views.home, name='home'),
+    path('email/', views.send_email, name='send-email')
 ]

@@ -110,7 +110,7 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Meru, Kenya</address>
+              <address>Kenya</address>
             </div>
 
           </li>
@@ -203,7 +203,7 @@
 
         <section class="about-text">
           <p>
-            I am a Software Engineer from Meru, Kenya, working in web and app development.
+            I am a Software Engineer from Kenya, working in web and app development.
             I enjoy
             turning complex problems into simple, beautiful and intuitive designs.
           </p>
@@ -885,7 +885,9 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <!-- Yet to be fully completed -->
+          <form method="POST" action="{% url 'portfolio:send-email' %}" class="form" data-form>
+            {% csrf_token %}
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
@@ -893,6 +895,7 @@
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
 
+            <input name="subject" class="form-input" placeholder="Subject" required data-form-input></input>
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
             <button class="form-btn" type="submit" disabled data-form-btn>
