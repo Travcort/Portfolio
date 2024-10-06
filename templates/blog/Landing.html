@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>BLOG</title>
+        <title>Tarvone | Blog</title>
         {% load static %}
         <!-- Favicon -->
         <link rel="shortcut icon" href="{% static 'images/avatar-favicon.png' %}" type="image/png">
@@ -30,22 +30,22 @@
                                 <a href="{% url 'blog:blog' Post.slug %}">
                 
                                 <figure class="blog-banner-box">
-                                    <img src="{% static 'images/Post_Profile.jpg' %}" alt="Testing" loading="lazy">
+                                    <img src="{% static 'images/Post_Profile.jpg' %}" alt="Michael De Santa" loading="lazy">
                                 </figure>
                 
                                 <div class="blog-content">
                 
                                     <div class="blog-meta">
-                                    <p class="blog-category">{{Post.slug}}</p>
+                                    <p class="blog-category">{{Post.category}}</p>
                 
                                     <span class="dot"></span>
                 
-                                    <time datetime="{{Post.created_on}}">{{Post.created_on| date:"d-F-Y"}}</time>
+                                    <time datetime="{{Post.created_on}}">{{Post.created_on| date:"d F Y"}}</time>
                                     </div>
                 
                                     <h3 class="h3 blog-item-title">{{Post.title}}</h3>
                 
-                                    <p class="blog-text">{{Post.content|safe|slice:":50"}}</p>
+                                    <p class="blog-text">{{Post.thumbnail_text|safe}}</p>
                 
                                 </div>
                 

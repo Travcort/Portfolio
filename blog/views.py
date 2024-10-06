@@ -13,7 +13,7 @@ def getTinyKey(request):
 
 
 class BlogListView(generic.ListView):
-    queryset = Post.objects.order_by('-created_on')
+    queryset = Post.objects.filter(status='published').order_by('-created_on')
     template_name = 'blog/Landing.html'
     context_object_name = "Posts"
 
